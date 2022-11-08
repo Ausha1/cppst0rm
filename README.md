@@ -3,7 +3,7 @@ A more automated and mainstream version of Mineek's Sunst0rm (https://github.com
 
 ## Note to all users who encounter any issues: DO NOT open any issues in futurerestore. Weather that be on Discord, or GitHub, this program does not use futurerestore incorrectly, and issues with futurerestore are unlikely. Instead, get support in cppst0rm's (Discord server)[https://discord.gg/gUwb4Apw] or (sunst0rm's Discord server)[https://discord.gg/TqVH6NBwS3] since these two repositories hold the same effect.
 
-## Since this program is so automated, I fealt not the need of a guide, but if any help is needed, please refer to cppst0rm's Discord server first. I was the one who made it, and thus will be able to provide more help.
+## Since this program is so automated, I fealt not the need of a guide, but if any help is needed, please refer to cppst0rm's Discord server for further help if the usage guide doesn't make sense to you.
 
 ## Things to Undrstand
 - This utility uses a checkm8 exploit to downgrade your device *teathered*. This means that every time your iPhone turns off, weather that be shut down, restarting, battery dying, or whatever, you have to use this program to turn it back on.
@@ -20,15 +20,34 @@ A more automated and mainstream version of Mineek's Sunst0rm (https://github.com
 - To get the cppst0rm executable, open a Terminal window, cd into your cppst0rm directory, and type ```make```
 
 ## Usage
-| Option          |
-|-----------------|
-|`-i`             |
-|`-t`             |
-|`-r`             |
-|`-b`             |
-|`-d`             |
-|`-id`            |
-|`--kpp`          |
-|`--legacy`       |
-|`--skip-baseband`|
-|`-rb`            |
+| Option          | Description                                                              |
+|-----------------|--------------------------------------------------------------------------|
+|`-i`             |`path to ipsw`                                                            |
+|`-t`             |`path to shsh2 blob`                                                      |
+|`-r`             |`restore mode`                                                            |
+|`-b`             |`boot tethered (use this every time to boot)`                             |
+|`-d`             |`specify board config`                                                    |
+|`-id`            |`specify iPhone identifier (Ex. iPhone8,4)`                               |
+|`--kpp`          |`Use this argument if the iPhone you are handling has an A9 chip or lower`|
+|`--legacy`       |`Use this argument if you are restoring or booting iOS 11 or below`       |
+|`--skip-baseband`|`Skip the baseband while restoring through futurerestore`                 |
+|`-rb`            |`Remove the boot folder for your device and create a fresh one`           |
+
+### To Restore
+```./cppst0rm -i [path to ipsw] -t [path to blob] -r -d [boardconfig]```
+- Use `--kpp` if your iDevice has an A9 chip or lower, otherwise leave it out
+- You can find your boardconfig (here)[ipsw.me]. Just click on your category, find your device, and hit the `Device Information` tab.
+- Since the process of patching files from the ipsw requires specifying if kpp is required, make sure you really need `--kpp` or not
+
+## To Boot
+```./cppst0rm -i [path to ipsw] -t [path to blob] -b -d [boardconfig] -id [identifier]```
+- Use `--kpp` if you did while restoring or if your device has kpp
+
+## Credits
+[M1n1Exploit](https://github.com/Mini-Exploit) - Some code from ra1nstorm
+
+[Arna13](https://github.com/Arna13) - Writing an easy to understand [guide](https://github.com/Arna13/sunst0rm-guide)
+
+[swayea](https://github.com/swayea) - Logo's
+
+[Sunst0rm](https://github.com/mineek/sunst0rm) - The backbone for this repository
