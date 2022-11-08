@@ -24,6 +24,20 @@ int usage() {
 }
 
 int dependencies() {
+    
+    ifstream check_Downloads_folder;
+    check_Downloads_folder.open("./Downloads");
+    if(!check_Downloads_folder) {
+        cout << "{!} Downloads folder missing! Creating a new one...\n";
+        system("mkdir ./Downloads");
+    }
+    
+    ifstream check_Dependencies_folder;
+    check_Dependencies_folder.open("./Dependencies");
+    if(!check_Dependencies_folder) {
+        cout << "{!} Dependencies folder missing! Creating a new one...\n";
+        system("mkdir ./Dependencies");
+    }
 
     ifstream check_for_homebrew;
     check_for_homebrew.open("/usr/local/bin/brew");
