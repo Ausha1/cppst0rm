@@ -27,7 +27,7 @@ A more automated and mainstream version of Mineek's Sunst0rm (https://github.com
 |`-r`             |restore mode                                                               |
 |`-b`             |boot tethered (use this every time to boot)                                |
 |`-d`             |specify board config (Ex. `n69ap`)                                         |
-|`-id`            |specify iPhone identifier (Ex. `iPhone8,4)                                 |
+|`-id`            |specify iPhone identifier (Ex. `iPhone8,4`)                                |
 |`--kpp`          |Use this argument if the iDevice you are handling has an `A9 chip or lower`|
 |`--legacy`       |Use this argument if you are restoring or booting `iOS 11 or below`        |
 |`--skip-baseband`|Skip the baseband while restoring through futurerestore                    |
