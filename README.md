@@ -20,18 +20,18 @@ A more automated and mainstream version of Mineek's Sunst0rm (https://github.com
 - To get the cppst0rm executable, open a Terminal window, cd into your cppst0rm directory, and type ```make```
 
 ## Usage
-| Option          | Description                                                              |
-|-----------------|--------------------------------------------------------------------------|
-|`-i`             |`path to ipsw`                                                            |
-|`-t`             |`path to shsh2 blob`                                                      |
-|`-r`             |`restore mode`                                                            |
-|`-b`             |`boot tethered (use this every time to boot)`                             |
-|`-d`             |`specify board config`                                                    |
-|`-id`            |`specify iPhone identifier (Ex. iPhone8,4)`                               |
-|`--kpp`          |`Use this argument if the iPhone you are handling has an A9 chip or lower`|
-|`--legacy`       |`Use this argument if you are restoring or booting iOS 11 or below`       |
-|`--skip-baseband`|`Skip the baseband while restoring through futurerestore`                 |
-|`-rb`            |`Remove the boot folder for your device and create a fresh one`           |
+| Option          | Description                                                               |
+|-----------------|---------------------------------------------------------------------------|
+|`-i`             |path to ipsw.                                                              |
+|`-t`             |path to shsh2 blob                                                         |
+|`-r`             |restore mode                                                               |
+|`-b`             |boot tethered (use this every time to boot)                                |
+|`-d`             |specify board config (Ex. `n69ap`)                                         |
+|`-id`            |specify iPhone identifier (Ex. `iPhone8,4)                                 |
+|`--kpp`          |Use this argument if the iDevice you are handling has an `A9 chip or lower`|
+|`--legacy`       |Use this argument if you are restoring or booting `iOS 11 or below`        |
+|`--skip-baseband`|Skip the baseband while restoring through futurerestore                    |
+|`-rb`            |Remove the boot folder for your device and create a fresh one              |
 
 ### To Restore
 ```./cppst0rm -i [path to ipsw] -t [path to blob] -r -d [boardconfig]```
