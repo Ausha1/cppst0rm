@@ -3,7 +3,7 @@ A more automated and mainstream version of Mineek's Sunst0rm (https://github.com
 
 ## Note to all users who encounter any issues: DO NOT open any issues in futurerestore. Whether that be on Discord, or GitHub, this program does not use futurerestore incorrectly, and issues with futurerestore are unlikely. Instead, get support in [cppst0rm's Discord server](https://discord.gg/gUwb4Apw).
 
-## Since this program is so automated, I fealt not the need of a guide, but if any help is needed, please refer to cppst0rm's Discord server for further help if the usage guide doesn't make sense to you.
+## Since this program is so automated, I felt not the need of a guide, but if any help is needed, please refer to cppst0rm's Discord server for further help if the usage guide doesn't make sense to you.
 
 ## Things to Undrstand
 - This utility uses a checkm8 exploit to downgrade your device *tethered*. This means that every time your iPhone turns off, whether that be shut down, restarting, battery dying, or whatever, you have to use this program to turn it back on.
