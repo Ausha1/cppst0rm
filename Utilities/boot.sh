@@ -28,7 +28,6 @@ if [[ "$cpid" == *"0x80"* ]]; then
     irecovery -f boot/iBEC.img4
     sleep 2
     irecovery -c "go"
-    sleep 1
 fi
 
 if [ "$bootlogo" == "YES" ]; then
@@ -40,18 +39,13 @@ fi
 
 echo "Sending devicetree..."
 irecovery -f $bootpath/devicetree.img4
-sleep 1
 echo "Running 'devicetree'"
 irecovery -c "devicetree"
-sleep 1
 echo "Sending trustcache..."
 irecovery -f $bootpath/trustcache.img4
-sleep 1
 echo "Running 'firmware'..."
 irecovery -c "firmware"
-sleep 1
 echo "Sending krnlboot..."
 irecovery -f $bootpath/krnlboot.img4
-sleep 1
 echo "Booting..."
 irecovery -c "bootx"
