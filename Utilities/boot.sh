@@ -20,10 +20,6 @@ cpid=$(irecovery -q | grep "CPID" | sed "s/CPID: //")
 echo "Sending iBSS..."
 irecovery -f $bootpath/ibss.img4
 sleep 2
-#send ibss again
-echo "Sending iBSS again..."
-irecovery -f $bootpath/ibss.img4
-sleep 3
 echo "Sending iBEC..."
 irecovery -f $bootpath/ibec.img4
 sleep 2
@@ -32,16 +28,14 @@ if [[ "$cpid" == *"0x80"* ]]; then
     irecovery -f boot/iBEC.img4
     sleep 2
     irecovery -c "go"
-    sleep 5
+    sleep 1
 fi
 
 if [ "$bootlogo" == "YES" ]; then
     echo "Sending bootlogo..."
     irecovery -f $bootpath/bootlogo.img4
-    sleep 1
     echo "Setting picture..."
     irecovery -c "setpicture 0x1"
-    sleep 1
 fi
 
 echo "Sending devicetree..."
