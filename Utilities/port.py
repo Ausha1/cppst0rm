@@ -2,7 +2,7 @@ from manifest import Manifest
 import api
 import argparse
 
-parser = argparse.ArgumentParser(description="{!} WARNING: THIS SHOULD NOT BE RUN INDEPENDENTLY! This is a python file used during cppst0rm to get required info about iOS device")
+parser = argparse.ArgumentParser(description="{!} WARNING: THIS SHOULD NOT BE RUN INDEPENDENTLY! This is a python file used during cppst0rm to get required info about your iDevice")
 parser.add_argument("-mode", type=str, help="Specifies the mode", required=True)
 parser.add_argument("-identifier", type=str, help="Specifies the identifier", required=False)
 parser.add_argument("-board", type=str, help="Specifies the board")
