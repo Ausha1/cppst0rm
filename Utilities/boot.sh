@@ -19,14 +19,10 @@ cpid=$(irecovery -q | grep "CPID" | sed "s/CPID: //")
 
 echo "Sending iBSS..."
 irecovery -f $bootpath/ibss.img4
-sleep 2
 echo "Sending iBEC..."
 irecovery -f $bootpath/ibec.img4
-sleep 2
 
 if [[ "$cpid" == *"0x80"* ]]; then
-    irecovery -f boot/iBEC.img4
-    sleep 2
     irecovery -c "go"
 fi
 
