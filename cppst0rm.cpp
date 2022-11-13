@@ -24,7 +24,6 @@ int usage() {
 }
 
 int dependencies() {
-    
     ifstream check_Downloads_folder;
     check_Downloads_folder.open("./Downloads");
     if(!check_Downloads_folder) {
@@ -780,16 +779,16 @@ int main(int argc, char **argv) {
 
     //Defines the location of the paths and stuff
 
-    int ipswposs;
-    int blobposs;
-    string mode;
-    bool rb;
-    int boardposs;
-    bool id;
-    int idposs;
-    bool kpp;
-    bool legacy;
-    bool skipbb;
+    int ipswposs = 0;
+    int blobposs = 0;
+    string mode = "";
+    bool rb = false;
+    int boardposs = 0;
+    bool id = false;
+    int idposs = 0;
+    bool kpp = false;
+    bool legacy = false;
+    bool skipbb = false;
     
     //ipsw
     for(int i = 0; i < argc;) {
