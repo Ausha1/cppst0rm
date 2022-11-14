@@ -43,6 +43,10 @@ A more automated and mainstream version of Mineek's Sunst0rm (https://github.com
 ```./cppst0rm -i [path to ipsw] -t [path to blob] -b -d [boardconfig] -id [identifier]```
 - Use `--kpp` if you did while restoring or if your device has kpp
 
+## Known issues
+- During restore, macOS says it cannot verify the identity of any of the binaries
+-- Fix this by opening up the "Dependencies" folder, and right clicking on each of the binaries and hitting open on every one of them. Re-run cppst0rm, and     your problem will be fixed!
+
 ## Credits
 [M1n1Exploit](https://github.com/Mini-Exploit) - Some code from ra1nstorm
 
